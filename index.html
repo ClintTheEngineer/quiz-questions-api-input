@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <title>Question List API</title>
+    <script src="main.js"></script>
+    </script>
+</head>
+<body>
+    <h1>JavaScript Quiz Question List</h1>
+
+    <h2>Edit Existing Question</h2>
+    <form id="questionForm">
+        <label for="questionId">ID:</label>
+        <input type="number" id="questionId" required>
+        <label for="questionNumber">Number:</label>
+        <input type="number" id="questionNumber" required>
+        <label for="questionText">Question:</label>
+        <textarea id="questionText" rows="3" required></textarea>
+        <label for="questionAnswer">Answer:</label>
+        <input type="text" id="questionAnswer" required>
+        <label for="questionOptions">Options (one option per line):</label>
+        <textarea id="questionOptions" rows="3" required></textarea>
+        <button type="submit">Update Current Question</button>
+    </form>
+
+    <h2>Add New Question</h2>
+    <form id="createForm">
+        <label for="createId">ID:</label>
+        <input type="number" id="createId" required>
+        <label for="createNumber">Number:</label>
+        <input type="number" id="createNumber" required>
+        <label for="createText">Question:</label>
+        <textarea id="createText" rows="3" required></textarea>
+        <label for="createAnswer">Answer:</label>
+        <input type="text" id="createAnswer" required>
+        <label for="createOptions">Options (one option per line):</label>
+        <textarea id="createOptions" rows="3" required></textarea>
+        <button id="create" type="submit">Create New Question</button> 
+    </form>
+
+    <h2>Questions</h2>
+    <ul id="questionList"></ul>
+</body>
+</html>
